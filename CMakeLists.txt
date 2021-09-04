@@ -12,5 +12,5 @@ include_directories(SFML_INCLUDE_DIR)
 find_package(SFML 2.5.1 COMPONENTS system window graphics network audio)
 
 configure_file(Fonts/Roboto-Regular.ttf Fonts/Roboto-Regular.ttf COPYONLY)
-add_executable(sfml_beginner main.cpp Game.cpp Game.h Game.cpp Game.h)
+add_executable(sfml_beginner main.cpp Game.cpp Game.h Player.cpp Player.h SwagBall.cpp SwagBall.h)
 target_link_libraries(sfml_beginner sfml-graphics sfml-window sfml-system sfml-audio sfml-network)
